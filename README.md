@@ -12,9 +12,7 @@ Inicialmente deve ser criado o namespace a partir do comando:
 
 Logo após, são excecutados os manifestos do banco de dados (Postgres) a partir do comando:
 
-\*asterisco\*
-
-**kubectl apply -f \postgres*\.yaml**
+kubectl apply -f postgres*.yaml
 
 Tão logo finalizada a execução dos manifestos do banco de dados (Postgres), dever ser executados os manifestos do backend. Para isso deve ser excecutados os manifestos a partir do comando:
 
