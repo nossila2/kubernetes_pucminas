@@ -30,10 +30,15 @@ kubectl get pods -o wide -n appgues
 No exemplo abaixo podemos verificar que o pod do frontend está sendo executado no node srv-hml-k8nod02.
 
 kubectl get pods -o wide -n appgues
+
 NAME                                   READY   STATUS    RESTARTS   AGE     IP           NODE              NOMINATED NODE   READINESS GATES
+
 backend-deployment-6bb75666ff-j9pfq    1/1     Running   0          42m     10.0.1.66    srv-hml-k8nod02   <none>           <none>
+
 backend-deployment-6bb75666ff-qpmzl    1/1     Running   0          2d5h    10.0.0.47    srv-hml-k8nod01   <none>           <none>
+
 frontend-deployment-8464dcbb69-sjrbk   1/1     Running   0          2d4h    10.0.1.105   srv-hml-k8nod02   <none>           <none>
+
 postgres-statefulset-0                 1/1     Running   0          2d10h   10.0.0.213   srv-hml-k8nod01   <none>           <none>
 
 Com isso devemos acessar a aplicação através da URL: http://srv-hml-k8nod02:30001
