@@ -15,15 +15,15 @@ Logo após, são excecutados os manifestos do banco de dados (Postgres) a partir
 
 kubectl apply -f postgres*.yaml
 
-Tão logo finalizada a execução dos manifestos do banco de dados (Postgres), dever ser executados os manifestos do backend. Para isso deve ser excecutados os manifestos a partir do comando:
+Tão logo finalizada a execução dos manifestos do banco de dados (Postgres), dever ser executados os manifestos do backend. Para isso, deve ser excecutados os manifestos a partir do comando:
 
 kubectl apply -f backend*.yaml
 
-Por fim deve ser excecutados os manifestos do frontend a partir do comando:
+Por fim, deve ser excecutados os manifestos do frontend a partir do comando:
 
 kubectl apply -f frontend*.yaml
 
-Para acessar a aplicação devemos descobrir em qual node o pod do frontend está sendo executado, visto que o serviço do frontend está configurado com o tipo: NodePort. Para isso deve ser executado o seguinte comando:
+Para acessar a aplicação devemos descobrir em qual node o pod do frontend está sendo executado, visto que o serviço do frontend está configurado com o tipo: NodePort. Para isso, deve ser executado o seguinte comando:
 
 **kubectl get pods -o wide -n appgues**
 
