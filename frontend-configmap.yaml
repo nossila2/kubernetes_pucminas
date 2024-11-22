@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-configmap
+  namespace: appgues 
+  labels:
+    app: frontend
+    component: configmap
+data:
+  REACT_APP_BACKEND_URL: "http://backend-service:5000"
