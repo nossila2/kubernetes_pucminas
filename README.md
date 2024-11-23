@@ -7,7 +7,7 @@ A partir do namespace: appgues a aplicação foi segmentada em 3 elementos:
 - Frontend
 
 
-Com o acesso ao cluster Kubernetes Inicialmente deve ser criado o namespace a partir do comando:
+Com o acesso ao cluster Kubernetes devidamente configurado via terminal (cli), inicialmente deve ser criado o namespace a partir do comando:
 
 **kubectl apply -f namespace.yaml**
 
