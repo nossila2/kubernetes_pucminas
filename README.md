@@ -14,21 +14,29 @@ Inicialmente deve ser criado o namespace a partir do comando:
 Logo após, são excecutados os manifestos do banco de dados (Postgres) a partir dos comandos:
 
 **kubectl apply -f postgres-secrets.yaml**
+
 **kubectl apply -f postgres-service.yaml**
+
 **kubectl apply -f postgres-statefulset.yaml**
 
 Tão logo finalizada a execução dos manifestos do banco de dados (Postgres), dever ser executados os manifestos do backend. Para isso, deve ser excecutados os manifestos a partir dos comandos:
 
 **kubectl apply -f backend-secrets.yaml**
+
 **kubectl apply -f backend-configmap.yaml**
+
 **kubectl apply -f backend-service.yaml**
+
 **kubectl apply -f backend-deployment.yaml**
+
 **kubectl apply -f backend-hpa.yaml**
 
 Por fim, deve ser excecutados os manifestos do frontend a partir do comando:
 
 **kubectl apply -f frontend-configmap.yaml**
+
 **kubectl apply -f frontend-service.yaml**
+
 **kubectl apply -f frontend-deployment.yaml**
 
 Para acessar a aplicação devemos descobrir em qual node o pod do frontend está sendo executado, visto que o serviço do frontend está configurado com o tipo: NodePort. Para isso, deve ser executado o seguinte comando:
